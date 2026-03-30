@@ -1,0 +1,17 @@
+
+
+
+<------------------------ 1*15*26 -------------------------->
++ Recreated a version of Bionic readind that will print text
+        files.
++ Fixed the file path problem. One drive was no longer active.
++ Found a way to print the file path within wsl.
+        - Always starts with /home/... etc
++ Found the subSequence method. Allowing end of String to be
+        added to new line.
+
+<-- Next is to incorporate .subSequence() in StrPlus.java
+        + and then into the BionicText.java methods. 
+                Which is more complex due to more methods
+                involved for String splitting and char formatting.
+
