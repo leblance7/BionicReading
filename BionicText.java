@@ -19,24 +19,39 @@ public class BionicText {
     public static void main(String[] args) {
         System.out.println("Enter the text you would to formatted" + 
         " to bionic");
+
 // creation of variable necessary for methods.
 // ===> Making Scanner obj and user input
         Scanner input = new Scanner(System.in);
+//Creatiing str object for user input
         String str = input.nextLine();
-            // 
+// Creating string variable w/empty space.
         String line = "";
+//Overwriting line variable with the returned output from
+//      upperCase(str)
+//      + Converting text userinput into Bionic Text Format.
         line = upperCase(str);
     }
+// main()  === End === 
 
+//Return an formatted string
     public static String upperCase(String str) {
             // str = str.toUpperCase();
-        
 // # 2. Create a String
 // Put split() String into an array of Char []
+        // Makes the entire str entered lowercase
         str = str.toLowerCase();
+
+// Creates an String ArrayList sentence.
+        //      - And populates each element using the str
+        //              split method.
+        //      - Each group of charcters divided by a
+        //              space will become a string
+        //              element in the ArrayList.
         String[] sentence = str.split(" ");
 
-// ===> Iterate through the String[] array 
+// ===> Iterate through the String[] array ** Previous code that
+//              threw errors.
 // Run through an if caulse: if <= Upper, 
 // word.toUpperCase();
 // for(String word: sentence) {  //Enhanced for loop to display entered word
@@ -47,7 +62,7 @@ public class BionicText {
 
         int counter = 0;
         for(int i = 0; i < sentence.length; i++) {
-            int upper = upLimit(sentence[i]);
+           int upper = upLimit(sentence[i]);
             // System.out.println("upper: " + upper);
             for (int j = 0; j < sentence[i].length(); j++){
                 // System.out.println("word " + i + ": " +
@@ -75,10 +90,10 @@ public class BionicText {
         System.out.println("\n");
         System.out.println("reconstructed:\n" + reconstructed);
 
-        System.out.println("counter : " + counter);
+        ystem.out.println("counter : " + counter);
         return str;
     }
-// lamda expression? Since method are being
+// lamda expression? Since method are bein
 //     in a nested formatt?
      public static int upLimit(String str) {
 // ===> Find the length of the String

@@ -11,18 +11,14 @@ import java.io.FileNotFoundException;
 public class BioReading {
 
     public static void main(String[] args) throws IOException {
-
 /*  String for File obj */
         File file = new File("/home/leblance7/BionicReading/DonFlamingo.txt");
-    
 // Creating Empty ArrayList for for readFile() 
         ArrayList<String> DonMingo = readText(file);
-    
 // System.out.println(DonMingo);
         //DonMingo = readText(file);
         eLoop(DonMingo);
     }   /*<======================*/
-
 // Creating method that uses list comprehensio. To read
 // and store lines of text into a list
 
@@ -60,7 +56,6 @@ public class BioReading {
 //System.out.println(text[0,50];
 //System.out.println(text[51, text.length()]; 
                 int maxWdth = 43;
-
                 if (text.length() > maxWdth) {
                         System.out.println(text.substring(0,
                                 maxWdth));

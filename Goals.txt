@@ -14,4 +14,10 @@
         + and then into the BionicText.java methods. 
                 Which is more complex due to more methods
                 involved for String splitting and char formatting.
-
+<------------------------4*10*26------------------------------>
+Creatating documentation for previous Java files. Till 5:30
+Until 5:30 till 6:00 work on VerticalAligent.java
+Continue working on documentation and split the method into
+        core parts.
+        - The UpperCase has two core functions while it should
+                only have one.
