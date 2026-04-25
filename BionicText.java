@@ -10,8 +10,6 @@ import java.io.FileNotFoundException;
 
 /** + completed adding Upper.java to the file 
  *  + Next add BioReading.java to BionicText.java
- *  + Accessing from high level to low level String and covert 
- *      using upperCase();
  */
 
 public class BionicText {
@@ -59,38 +57,36 @@ public class BionicText {
 // }
         String iterated = "";
         String reconstructed = "";
-
         int counter = 0;
+
         for(int i = 0; i < sentence.length; i++) {
            int upper = upLimit(sentence[i]);
-            // System.out.println("upper: " + upper);
+// System.out.println("upper: " + upper);
             for (int j = 0; j < sentence[i].length(); j++){
-                // System.out.println("word " + i + ": " +
-                //   sentence[i]);
-
                 String word = sentence[i];
                 String[] words = word.split("");
-                // System.out.println("letter: " + words[j]);
+// System.out.println("letter: " + words[j]);
                 if( j < upper) {
                     iterated = words[j].toUpperCase();
                     counter += 1;
-                    // System.out.println("iterated: " + words[j].toUpperCase() + ", index: " + j);
+// System.out.println("iterated: " + words[j].toUpperCase() + ", index: " + j);
                 }
                 else if (j >= upper) {
                     iterated = words[j];
                     counter += 1;
-                    // System.out.println("iterated: " + words[j] + ", index: " + j);
+// System.out.println("iterated: " + words[j] + ", index: " + j);
                 }
                 if( j == sentence[i].length() - 1) {
                     iterated += " ";
-                }    // For Loop END
+                }    
             reconstructed = reconstructed + iterated;
             }
+// For loop lvl 1 end
         }
+// For loop lvl 2 end
         System.out.println("\n");
         System.out.println("reconstructed:\n" + reconstructed);
-
-        ystem.out.println("counter : " + counter);
+        System.out.println("counter : " + counter);
         return str;
     }
 // lamda expression? Since method are bein
