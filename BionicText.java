@@ -61,25 +61,33 @@ public class BionicText {
 
         for(int i = 0; i < sentence.length; i++) {
            int upper = upLimit(sentence[i]);
+           System.out.println("upLimit(sentence[i]): " + upLimit(sentence[i]));
+           System.out.println("i: " + i);
 // System.out.println("upper: " + upper);
-            for (int j = 0; j < sentence[i].length(); j++){
-                String word = sentence[i];
-                String[] words = word.split("");
-// System.out.println("letter: " + words[j]);
-                if( j < upper) {
-                    iterated = words[j].toUpperCase();
-                    counter += 1;
-// System.out.println("iterated: " + words[j].toUpperCase() + ", index: " + j);
-                }
-                else if (j >= upper) {
-                    iterated = words[j];
-                    counter += 1;
-// System.out.println("iterated: " + words[j] + ", index: " + j);
-                }
-                if( j == sentence[i].length() - 1) {
-                    iterated += " ";
-                }    
-            reconstructed = reconstructed + iterated;
+//              INNER LOOP
+                for (int j = 0; j < sentence[i].length(); j++){
+                        System.out.println("j: " + j);
+                        String word = sentence[i];
+                        System.out.println("word: " + word);
+                        String[] words = word.split("");
+                        System.out.println("words: " + words);
+        // System.out.println("letter: " + words[j]);
+//              Inner loop formule 1st step 
+                        if( j < upper) {
+                        iterated = words[j].toUpperCase();
+                        counter += 1;
+        // System.out.println("iterated: " + words[j].toUpperCase() + ", index: " + j);
+                        }
+                        else if (j >= upper) {
+                        iterated = words[j];
+                        counter += 1;
+        // System.out.println("iterated: " + words[j] + ", index: " + j);
+                        }
+//              Inner loop 2nd Step
+                        if( j == sentence[i].length() - 1) {
+                        iterated += " ";
+                        }    
+               reconstructed = reconstructed + iterated;
             }
 // For loop lvl 1 end
         }
