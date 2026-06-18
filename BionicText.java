@@ -1,5 +1,4 @@
-/**
- * Creating the user input for bionic code text formatting.
+ /* Creating the user input for bionic code text formatting.
  *  - Current user inputs are limited to paragraphs seperated by newline commands
  */
 
@@ -61,16 +60,21 @@ public class BionicText {
 
         for(int i = 0; i < sentence.length; i++) {
            int upper = upLimit(sentence[i]);
-           System.out.println("upLimit(sentence[i]): " + upLimit(sentence[i]));
+           System.out.println("63: upLimit(sentence[i]): " + upLimit(sentence[i]));
            System.out.println("i: " + i);
 // System.out.println("upper: " + upper);
 //              INNER LOOP
-                for (int j = 0; j < sentence[i].length(); j++){
-                        System.out.println("j: " + j);
-                        String word = sentence[i];
+                for (int j = 0; j < sentence[i].length(); j++){ 
+                        System.out.println("j: " + j); 
+                        
+                        String word = sentence[i]; 
+                        
                         System.out.println("word: " + word);
+
                         String[] words = word.split("");
-                        System.out.println("words: " + words);
+
+                        System.out.println("words: " + sentence[i]);
+
         // System.out.println("letter: " + words[j]);
 //              Inner loop formule 1st step 
                         if( j < upper) {
@@ -89,23 +93,22 @@ public class BionicText {
                         }    
                reconstructed = reconstructed + iterated;
             }
-// For loop lvl 1 end
+// For loop lvl i end
         }
-// For loop lvl 2 end
+// For loop lvl j end
         System.out.println("\n");
         System.out.println("reconstructed:\n" + reconstructed);
         System.out.println("counter : " + counter);
         return str;
     }
-// lamda expression? Since method are bein
-//     in a nested formatt?
-     public static int upLimit(String str) {
+
 // ===> Find the length of the String
-// Divide the length by two and subtract the lesser 
-// number from the length
-// Upper ==  str.length - (str.length / 2)
-        int len = str.length() - 1;
-        int upper = len - (len / 2);
+// Two lines of code that were condensed into one 
+//int len = str.length() - 1;
+//int upper = len - (len / 2);
+     public static int upLimit(String str) {
+        int upper = str.length() / 2;
         return upper;   
     }   
 }
+

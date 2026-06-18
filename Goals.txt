@@ -22,5 +22,5 @@ Continue working on documentation and split the method into
         - The UpperCase has two core functions while it should
                 only have one.
 <---------------------5*13*26 -------------------------->
-Find text counter to effectivly measure what is insdie the nested
+Find text counter to effectivly measure what is inside the nested
         Summations loops( for loops).
