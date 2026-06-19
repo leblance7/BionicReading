@@ -78,18 +78,18 @@ public class BionicText {
         // System.out.println("letter: " + words[j]);
 //              Inner loop formule 1st step 
                         if( j < upper) {
-                        iterated = words[j].toUpperCase();
-                        counter += 1;
+                                iterated = words[j].toUpperCase();
+                                counter += 1;
         // System.out.println("iterated: " + words[j].toUpperCase() + ", index: " + j);
                         }
                         else if (j >= upper) {
-                        iterated = words[j];
-                        counter += 1;
+                                iterated = words[j];
+                                counter += 1;
         // System.out.println("iterated: " + words[j] + ", index: " + j);
                         }
 //              Inner loop 2nd Step
                         if( j == sentence[i].length() - 1) {
-                        iterated += " ";
+                                iterated += " ";
                         }    
                reconstructed = reconstructed + iterated;
             }
