@@ -24,3 +24,6 @@ Continue working on documentation and split the method into
 <---------------------5*13*26 -------------------------->
 Find text counter to effectivly measure what is inside the nested
         Summations loops( for loops).
+
+<---------------------6*18*26 -------------------------->
++ Work on small portions of projectr every day.
